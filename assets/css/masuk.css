@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(#7ee8fa,#eec0c6);
+    color: #3a4b60;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    max-width: 850px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(237, 242, 241, 0.25);
+    border: 1px solid  rgba(0,0,0,.125);
+}
+
+.login {
+    width: 400px;
+}
+
+form {
+    width: 300px;
+    margin: 60px auto;
+}
+
+h1 {
+    margin: 20px;
+    text-align: center;
+    font-weight: bolder;
+    color: #3a4b60;
+    text-transform: uppercase;
+}
+
+hr {
+    border-top: 2px solid #3a4b60;
+}
+
+.right img {
+    width: 450px;
+    height: 100%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+
+button {
+    border: none;
+    outline: none;
+    padding: 8px;
+    width: 300px;
+    height: 45px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    background: #3a4b60;
+}
+
+button:hover {
+    background: rgb(91, 94, 103);
+}
+form .row{
+    height: 45px;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  form .row input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    background: rgba(255,255,255,0.2);
+    padding-left: 60px;
+    border-radius: 5px;
+    border: 1px solid #3a4b60;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  form .row input:focus{
+    border-color: rgba(0,0,0,.125);
+    background: #fff;
+    color: #3a4b60;
+    box-shadow: inset 0px 0px 2px 2px rgba(237, 242, 241, 0.25);
+  }
+  form .row input::placeholder{
+    color: #3a4b60;
+  }
+   form .row i{
+    position: absolute;
+    width: 47px;
+    height: 100%;
+    color: #fff;
+    font-size: 18px;
+    background: #3a4b60;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+@media (max-width: 880px) {
+    .container {
+        width: 100%;
+        max-width: 750px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    form {
+        width: 300px;
+        margin: 20px auto;
+    }
+
+    .login {
+        width: 400px;
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .right img {
+        width: 100%;
+        height: 100%;
+    }
+}
